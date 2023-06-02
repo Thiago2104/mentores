@@ -1,0 +1,90 @@
+.mentors-card {
+    width: 35%;
+    min-height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 5px;
+    background-color: var(--soft-primary-color);
+    padding: 1%;
+    box-shadow: 6px 12px 12px rgba(25, 42, 103, 0.19);
+    > div {
+      width: 100%;
+      display: flex;
+    }
+    &__head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  
+      h3 {
+        font-size: 1.93em;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0;
+        color: var(--primary-color);
+      }
+      a {
+        width: 35%;
+        margin: 5px 0;
+        margin-left: 10px;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--button-color);
+        color: var(--contrast-color);
+        padding: 2.5%;
+        border-radius: 14px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        i {
+          margin-left: 2%;
+        }
+      }
+    }
+    &__body {
+      p {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: var(--soft-grey-color);
+        line-height: 25px;
+        font-weight: 600;
+        font-size: 1em;
+        i {
+          font-size: 1.5em;
+          margin-right: 3.5%;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .mentors-card {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .mentors-card {
+      width: 90%;
+      padding: 3% 2%;
+      &__head {
+        h3 {
+          font-size: 1.5em;
+        }
+      }
+      &__body {
+        p {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  

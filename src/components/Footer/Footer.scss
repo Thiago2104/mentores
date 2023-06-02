@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 95px;
+    padding: 1.5% 0;
+    > div {
+      width: calc(65% / 3);
+      max-width: 413px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: var(--contrast-color);
+    }
+    &__details {
+      p {
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2% 0;
+      padding-bottom: 5%;
+      gap: 35px;
+      > div {
+        width: 80%;
+      }
+    }
+  }
+  
